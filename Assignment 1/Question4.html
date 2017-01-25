@@ -1,3 +1,64 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Pam's Appartment Search Form </title>
+</head>
+<body>
+  <img src=
+  <h1>Pam's Appartment Search Form</h1>
+  <fieldset>
+    <legend> Renter(s) information </legend>
+    <form>
+      How many people will live in the appartment?
+      <input type="number" name="numOfPeople" min="1" max = "5">
+      <br><br>
+      Smoker?
+      <input type="radio" name="smoker" value = "Smoker"> Yes
+      <input type = "radio" name= "non-smoker" value = "Non-smoker"> No
+      <br><br>
+      Any pets?<br>
+      <input type ="checkbox" name="pets" value = "cats"> Cat(s)<br>
+      <input type ="checkbox" name="dogs" value = "dogs"> Dog(s)<br>
+      <input type ="checkbox" name="other" value = "Other"> Other Specify: <input type="text" name="other"><br>
+
+    </form>
+  </fieldset>
+  <fieldset>
+    <legend>What are you looking for?</legend>
+    <form>
+      Size of the appartment<br>
+      <input type = "checkbox" name="rooms" value="studio"> Studio
+      <input type = "checkbox" name="rooms" value="3.5"> 3 &#189;
+      <input type = "checkbox" name="rooms" value="4.5"> 4 &#189;
+      <input type = "checkbox" name="rooms" value="5.5"> 5 &#189;
+      <input type = "checkbox" name="rooms" value="5.5+"> More than 5 &#189;
+      <br><br>
+      Do you have preferred locations? <br>
+      <input type = "checkbox" name="location" value="West Island"> West Island
+      <input type = "checkbox" name="location" value="Downtown"> Downtown
+      <input type = "checkbox" name="location" value="Lower Westmount"> Lower Westmount
+      <input type = "checkbox" name="location" value="NDG"> NDG
+      <input type = "checkbox" name="location" value="East end of island"> East end of island
+      <input type = "checkbox" name="location" value="Don't care"> Don't care
+      <br> <br>
+      Price range/month:
+      <select>
+        <option>Select one</option>
+        <option value="<500"> <500 </option>
+        <option value="500-999">  500-999</option>
+        <option value="1000-1500"> 1000-1500 </option>
+        <option value="none"> No price limit </option>
+      </select>
+      <br> <br>
+      It would be nice to have <br>
+      <input type = "checkbox" name = "Furnished"> Furniture
+      <input type = "checkbox" name = "Pool"> Pool
+      <input type = "checkbox" name = "Wi-Fi"> Wi-Fi
+      <input type = "checkbox" name = "indoor parking"> Indoor parking
+      <input type = "checkbox" name = "Outdoor parking"> Outdoor parking
+    </form>
+  </fieldset>
+  <input type = "button" name="Search" value = "Search">
+  <input type = "button" name="reset" value = "Start Over">
+</body>
 </html>
