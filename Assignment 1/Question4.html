@@ -2,12 +2,31 @@
 <html>
 <head>
   <title>Pam's Appartment Search Form </title>
+  <style>
+  body{
+    background-color: darkseagreen;
+  }
+  fieldset#part1 {
+  border: darkgreen 3px solid;
+  background-color: palegreen;
+  }
+  fieldset#part2{
+    border: orchid 3px solid;
+    background-color: lavender;
+  }
+  legend#part1 {
+    color: darkgreen;
+  }
+  legend#part2 {
+    color: orchid;
+  }
+  </style>
 </head>
 <body>
-  <img src=
-  <h1>Pam's Appartment Search Form</h1>
-  <fieldset>
-    <legend> Renter(s) information </legend>
+  <a href="http://images.clipartpanda.com/condo-clipart-black-and-white-apartment-building-clip-artbuilding-with-trees-clip-art---vector-clip-art-online-royalty-blrtgrpq.png"><img src=http://images.clipartpanda.com/condo-clipart-black-and-white-apartment-building-clip-artbuilding-with-trees-clip-art---vector-clip-art-online-royalty-blrtgrpq.png height ="100px" width = "100px"></a>
+  <h1 {color:red;}>Pam's Appartment Search Form</h1>
+  <fieldset id="part1">
+    <legend id="part1"> Renter(s) information </legend>
     <form>
       How many people will live in the appartment?
       <input type="number" name="numOfPeople" min="1" max = "5">
@@ -23,8 +42,8 @@
 
     </form>
   </fieldset>
-  <fieldset>
-    <legend>What are you looking for?</legend>
+  <fieldset id="part2">
+    <legend id="part2">What are you looking for?</legend>
     <form>
       Size of the appartment<br>
       <input type = "checkbox" name="rooms" value="studio"> Studio
