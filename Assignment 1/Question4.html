@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pam's Appartment Search Form </title>
+  <title> Pam's Appartment Search Form </title>
   <style>
   body{
     background-color: darkseagreen;
@@ -14,28 +14,31 @@
     border: orchid 3px solid;
     background-color: lavender;
   }
-  legend#part1 {
+  legend#l1 {
     color: darkgreen;
   }
-  legend#part2 {
+  legend#l2 {
     color: orchid;
+  }
+  label{
+    font-weight: bold;
   }
   </style>
 </head>
 <body>
-  <a href="http://images.clipartpanda.com/condo-clipart-black-and-white-apartment-building-clip-artbuilding-with-trees-clip-art---vector-clip-art-online-royalty-blrtgrpq.png"><img src=http://images.clipartpanda.com/condo-clipart-black-and-white-apartment-building-clip-artbuilding-with-trees-clip-art---vector-clip-art-online-royalty-blrtgrpq.png height ="100px" width = "100px"></a>
-  <h1 {color:red;}>Pam's Appartment Search Form</h1>
+  <a href="http://images.clipartpanda.com/condo-clipart-black-and-white-apartment-building-clip-artbuilding-with-trees-clip-art---vector-clip-art-online-royalty-blrtgrpq.png"><img src=http://images.clipartpanda.com/condo-clipart-black-and-white-apartment-building-clip-artbuilding-with-trees-clip-art---vector-clip-art-online-royalty-blrtgrpq.png alt="logo" height ="100" width = "100"></a>
+  <h1>Pam's Appartment Search Form</h1>
   <fieldset id="part1">
-    <legend id="part1"> Renter(s) information </legend>
+    <legend id="l1"> Renter(s) information </legend>
     <form>
       How many people will live in the appartment?
       <input type="number" name="numOfPeople" min="1" max = "5">
       <br><br>
-      Smoker?
+      <label>Smoker?</label>
       <input type="radio" name="smoker" value = "Smoker"> Yes
       <input type = "radio" name= "non-smoker" value = "Non-smoker"> No
       <br><br>
-      Any pets?<br>
+      <label>Any pets?</label><br>
       <input type ="checkbox" name="pets" value = "cats"> Cat(s)<br>
       <input type ="checkbox" name="dogs" value = "dogs"> Dog(s)<br>
       <input type ="checkbox" name="other" value = "Other"> Other Specify: <input type="text" name="other"><br>
@@ -43,7 +46,7 @@
     </form>
   </fieldset>
   <fieldset id="part2">
-    <legend id="part2">What are you looking for?</legend>
+    <legend id="l2">What are you looking for?</legend>
     <form>
       Size of the appartment<br>
       <input type = "checkbox" name="rooms" value="studio"> Studio
@@ -63,7 +66,7 @@
       Price range/month:
       <select>
         <option>Select one</option>
-        <option value="<500"> <500 </option>
+        <option value="500"> &lt; 500 </option>
         <option value="500-999">  500-999</option>
         <option value="1000-1500"> 1000-1500 </option>
         <option value="none"> No price limit </option>
